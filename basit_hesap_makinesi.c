@@ -1,18 +1,18 @@
 #include<studio.h>
 
 int main(){
-	printf("BASÝT HESAP MAKÝNESÝ\n\n");
+	printf("BASÄ°T HESAP MAKÄ°NESÄ°\n\n");
 	
 	float sayi1, sayi2, sonuc;
 	int islem;
 	
-	printf("Ýlk sayýyý giriniz: \n");
+	printf("Ä°lk sayÄ±yÄ± giriniz: \n");
 	scanf("%f", &sayi1);
 	
-	printf("2. sayýyý giriniz: \n");
+	printf("2. sayÄ±yÄ± giriniz: \n");
 	scanf("%f", &sayi2);
 	
-	printf("Ýþlemi giriniz (1->Toplama 2->Çýkarma 3->Çarpma 4->Bölme): \n");
+	printf("Ä°ÅŸlemi giriniz (1->Toplama 2->Ã‡Ä±karma 3->Ã‡arpma 4->BÃ¶lme): \n");
 	scanf("%d", &islem);
 	
 	if(islem == 1)
@@ -24,7 +24,7 @@ int main(){
 	else if(islem == 4)
 		sonuc = sayi1 / sayi2;
 		
-	printf("Ýþlemin sonucu: %.2f", sonuc);
+	printf("Ä°ÅŸlemin sonucu: %.2f", sonuc);
 	
 	return 0;
 }
