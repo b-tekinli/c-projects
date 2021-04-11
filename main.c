@@ -252,11 +252,12 @@ int main() {
 	*/
 	
 	
+	
 	// Vize-Final hesaplayan program
 	
 	/*
 	int vize1, vize2, final;
-	float dersOrt;
+	float dersOrt, ortalama;
 	
 	printf("1. vize notunuzu giriniz: ");
 	scanf("%d", &vize1);
@@ -264,24 +265,293 @@ int main() {
 	scanf("%d", &vize2);
 	printf("Final notunuzu giriniz: ");
 	scanf("%d", &final);
+	printf("Universite ortalamasi: ");
+	scanf("%f", &ortalama);
 	
 	dersOrt = (vize1 + vize2 + final) / 3.0;
-	
 	
 	if (dersOrt > 60) {
 		printf("Dersten gectiniz :)");
 	}
+	else if (dersOrt > 50){
+		printf("Dersten bute kaldiniz...");
+		
+		if (prtalama < 2.5) {
+			printf("Butu gecsen bile dersi seneye al, cunku ortalaman dusuk");
+		}
+	}
 	else {
-		printf("Dersten kaldiniz...");
+		printf("Kaldiniz.");
+	*/
+	
+	
+	
+	// Harf Notu Hesaplama
+	
+	/*
+	int vize1, vize2, final;
+	float dersOrt, uniOrt;
+	
+	printf("1. vize: ");
+	scanf("%d", &vize1);
+	
+	printf("2. vize: ");
+	scanf("%d", &vize2);
+	
+	printf("final: ");
+	scanf("%d", &final);
+
+	printf("Universite ortalamanizi giriniz: ");
+	scanf("%f", &uniOrt);
+	
+	dersOrt = (vize1 * 3 / 10.0 + vize2 * 3 / 10.0 + final * 4 / 10.0);
+	
+	if(dersOrt > 90) {
+		printf("Harf Notunuz - AA ve Ders Ortalamaniz: %f", dersOrt);
+	}
+	else if(dersOrt >= 85 && dersOrt < 90) {
+		printf("Harf Notunuz - BA ve Ders Ortalamaniz: %f", dersOrt);
+	}
+	else if(dersOrt >= 80 && dersOrt < 85) {
+		printf("Harf Notunuz - BB ve Ders Ortalamaniz: %f", dersOrt);
+	}
+	else if(dersOrt >= 75 && dersOrt < 80) {
+		printf("Harf Notunuz - CB ve Ders Ortalamaniz: %f", dersOrt);
+	}
+	else if(dersOrt >= 70 && dersOrt < 75) {
+		printf("Harf Notunuz - CC ve Ders Ortalamaniz: %f", dersOrt);
+		if ( uniOrt < 2.5) {
+			printf("Dersi tekrar alman yararli olur cunku ortalaman dusuk");
+		}
+	}
+	else if(dersOrt >= 65 && dersOrt < 70) {
+		printf("Harf Notunuz - DC ve Ders Ortalamaniz: %f", dersOrt);
+		if ( uniOrt < 2.5) {
+			printf("Dersi tekrar alman yararli olur cunku ortalaman dusuk");
+		}
+	}
+	else if(dersOrt >= 60 && dersOrt < 65) {
+		printf("Harf Notunuz - DD ve Ders Ortalamaniz: %f", dersOrt);
+		if ( uniOrt < 2.5) {
+			printf("Dersi tekrar alman yararli olur cunku ortalaman dusuk");
+		}
+	}
+	else {
+		printf("Harf Notunuz - FF ve Ders Ortalamaniz: %f", dersOrt);
+		printf("Dersten kaldiniz.");
 	}
 	*/
 	
 	
 	
+	// ATM Ornegi
+	/*
+	int islem;
+	int bakiye = 1000;
+	int tutar;
+	
+	printf("Islemler\n1.Para Cekme\n2.Para Yatirma\n3.Havale Yapma\n4.Bakiye Sorgulama\n5.Kart Iade\n\n\n");
+	
+	printf("Islem seciniz: ");
+	scanf("%d",  &islem);
+	
+	switch(islem) {
+		case 1:
+			printf("Bakiyeniz: %d\n", bakiye);
+			printf("Cekilecek Tutar: ");
+			scanf("%d", &tutar);
+			if(tutar > bakiye) {
+				printf("Bakiye yetersiz.\n");
+			}
+			bakiye -=tutar;
+			printf("Bakiyeniz: %d", bakiye);
+			break;
+		case 2:
+			printf("Bakiyeniz: %d\n", bakiye);
+			printf("Yatiralacak Tutar: ");
+			scanf("%d", &tutar);
+			
+			bakiye +=tutar;
+			printf("Bakiyeniz: %d", bakiye);
+			break;
+		case 3:
+			printf("Bakiyeniz: %d\n", bakiye);
+			printf("Havale Yapilacak Tutar: ");
+			scanf("%d", &tutar);
+			if(tutar > bakiye) {
+				printf("Bakiye yetersiz.\n");
+			}
+			bakiye -= tutar;
+			printf("Bakiyeniz: %d", bakiye);
+			break;
+		case 4:
+			printf("Bakiyeniz: %d\n", bakiye);
+			break;
+		case 5:
+			printf("Kart Iade Edildi.\n");
+			break;
+		default:
+			printf("Bilinmeyen Islem.");
+			break;
+	}
+	*/
 	
 	
 	
+	// Döngüler
+	//While Dongusu
 	
+	/*
+	int i;
+	
+	i = 0;
+	
+	while(i < 10) {
+		
+		printf("%d) Merhaba Yazilim Gelistiricisi\n", i);
+		
+		i++;
+	}
+	
+	printf("%d) Dongu bitti.", i);
+	*/
+	
+	
+	// Faktoriyel
+	/*
+	int n;
+	int fact = 1;
+	
+	printf("Faktoriyel istediginiz sayiyi giriniz: ");
+	scanf("%d", &n);
+	
+	while (n != 0) {
+		printf("%d\n", n);
+		fact = fact *n;
+		
+		n--;
+	}
+	printf("%d", fact);
+	*/
+	
+	
+	
+	// Do-While Dongusu
+	
+	/*
+	int n = 10;
+	
+	do {
+		printf("%d\n", n);
+		
+		n--;
+	}
+	while(n > 0);
+	*/
+	
+	
+	
+	/* 1234 rakamlarý toplamý kaç haneli olduðunu bulma */
+	
+	/*
+	int n, hane = 0, toplam = 0;
+	
+	printf("Sayiyi giriniz: ");
+	scanf("%d", &n);
+	
+	do {
+		toplam += (n % 10);
+		
+		hane ++;
+		
+		n = n / 10;
+	}
+	while(n > 0);
+	
+	printf("Rakamlarin toplami %d haneli", toplam, hane);
+	*/
+	
+	
+	
+	// For Dongusu
+	
+	/*
+	int i, j;
+	
+	for (i=0, j=1; i<10 && j < 5; i++, j++){
+		printf("%d\n", i);
+	}
+	*/
+	
+	/*
+	for (j=0; j<3; j++) {
+		printf("i:%d j %d\n", i, j);
+	}
+	*/
+	
+	
+	
+	// Fibonacci Serisi
+	
+	// 1, 1, 2, 3, 5, 8, 13, 21...
+	
+	/*
+	int ilkSayi = 1;
+	int ikinciSayi = 1;
+	int i;
+	
+	printf("%d\n%d\n", ilkSayi, ikinciSayi);
+	
+	for (i=0; i<12; i++){
+		
+		int temp = ikinciSayi;
+		
+		ikinciSayi += ilkSayi;
+		
+		ilkSayi = temp;
+		
+		printf("%d\n", ikinciSayi);
+	}
+	*/
+	
+	
+	
+	// Break Deyimi
+	
+	/*
+	int toplam = 0;
+	int sayi;
+	int i;
+	
+	for (i=0; true; i++){
+		printf("Sayiyi giriniz: (Cikmak icin -1'e basiniz.)");
+		scanf("%d", &sayi);
+		
+		if (sayi == -1){
+			break;
+		}
+		toplam += sayi;
+	}
+	printf("%d", toplam);
+	*/
+	
+	
+	
+	// Continue Deyimi
+	
+	int toplam = 0;
+	
+	int i = 0;
+	
+	while (i <= 10) {
+		if (i % 2 == 1) {
+			i++;
+			continue;
+		}
+		toplam += i;
+		i++;
+	}
+	printf("%d", toplam);
 	
 	return 0;
 }
