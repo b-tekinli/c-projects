@@ -539,6 +539,7 @@ int main() {
 	
 	// Continue Deyimi
 	
+	/*
 	int toplam = 0;
 	
 	int i = 0;
@@ -552,6 +553,224 @@ int main() {
 		i++;
 	}
 	printf("%d", toplam);
+	*/
+	
+	
+	
+	
+	
+	// Diziler
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	// Fonksiyonlar
+
+	/*
+	void hatayiBas(int hata, int hata2){									// void, hiçbir þey döndürmeyen fonksiyondur.
+		printf("Hata kodu %d", hata)
+	}
+	
+	int sayi;
+	printf("Lutfen negatif olmayan bir sayi giriniz: ");
+	scanf("%d", &sayi);
+	
+	if(sayi < 0){
+		hatayiBas(404, 410);
+	}
+	else{
+		printf("Tebrikler!");
+	}
+	*/
+	
+	
+	
+	/*
+	int topla(int sayi1, int sayi2){
+		return sayi1 + sayi2;
+	}
+	
+	
+	int sayi1, sayi2;
+	
+	scanf("%d %d", &sayi1, &sayi2);
+	printf("%d", topla(sayi1, sayi2));
+	*/
+	
+	
+	
+	
+	// Faktöriyel Bulma
+	
+	/*
+	int faktoriyel(int sayi){
+		int fact = 1;
+		
+		for(; sayi>0; sayi--){
+			fact *= sayi;
+		}
+		
+		return fact;
+	}
+	
+	
+	
+	int n;
+	
+	printf("Faktoriyelini istediginiz sayiyi girin: ");
+	scanf("%d", &n);
+	
+	printf("Faktoriyel: %d", faktoriyel(n));
+	*/
+	
+	
+	
+	// Asal sayi mi deðil mi?
+	
+	/*
+	int asalMi(int sayi){
+		int i;
+		
+		for(i=2; i<sayi; i++){
+			if(sayi % i == 0){
+				return 0;
+			}
+		}
+		
+		return 1;
+	}
+	
+	
+	printf("Bir sayi giriniz: ");
+	scanf("%d", &n);
+	
+	if(asalMi(n ) == 0){
+		printf("Bu sayi asal degildir.");
+	}
+	else{
+		printf("Bu sayi asal sayidir.");
+	}
+	*/
+	
+	
+	/*
+	int carp(int matris[], int size){
+		int carpim = 1;
+		
+		int i = 0;
+		
+		for(; i<size; i++){
+			carpim *= matris[i];
+		}
+	}
+	
+	
+	int sayilar[5] = {1, 2, 3, 4, 5};
+	
+	printf("%d", carp(sayilar, 5));
+	*/
+	
+	
+	
+	/*
+	void bastir(int matrisFunc[][], int size){
+		int i, j;
+		
+		for(i=0; i<size; i++){
+			printf("%d", matrisFunc[i][j]);
+		}
+		
+		printf("\n");
+	}
+	
+	
+	
+	int matris[3][4];
+	int i, j;
+	
+	printf("Matrisi doldurunuz: ");
+	
+	for(i=0; i<3; i++){
+		for(j=0, j<4; j++){
+			scanf("%d", &matrisFunc[i][j]);
+		}
+	}
+	
+	bastir(matrisFunc, 3);
+	*/
+	
+	
+	/*
+	int uzunlukDondur(char name[]){
+		
+		int uzunluk = 0, i;
+		
+		for(i=0; name[i] != '\0'; i++){
+			uzunluk++;
+		}
+		
+		return uzunluk;
+	}
+	
+	
+	char isim[] = "Aleyna";
+	
+	printf("%d", uzunlukDondur(isim));
+	*/
+	
+	
+	
+	
+	void tersCevir(char dizi[]){
+		int i, uzunluk, gecici;
+		
+		uzunluk = strlen(dizi);
+		
+		for(i=0; i<uzunluk/2; i++){
+			gecici = dizi[i];
+			dizi[i] = dizi[uzunluk-1-i];
+			
+			dizi[uzunluk-1-i] = gecici;
+		}
+	}
+	
+	
+	
+	char text[200];
+	
+	scanf("%s", text);
+	
+	tersCevir(text);
+	
+	printf("%s", text);
+	
+	
+	
+	
+	
+	
+	
 	
 	return 0;
 }
