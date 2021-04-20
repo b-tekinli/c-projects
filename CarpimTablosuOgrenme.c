@@ -8,18 +8,24 @@ int main(int argc, char *argv[]) {
     printf("Bir tam sayi giriniz: ");
     scanf("%d", &num);
     
-    for (i=1; i<=10; ++i) {
-        printf("\n%d x %d = ", num, i, result);
-        scanf("%d", &result);
-        
-        if(result == (num * i)){
+    
+    for (i=1; i<=10; i++) {
+	    printf("\n%d x %d = ", num, i, result);
+	    scanf("%d", &result);
+	        
+	    if(result == (num * i)){
 			printf("\nHarika! Dogru bildiniz. Tebrikler :)\n");
 		}
 		else{
-			printf("\nYanlis cevap! Lutfen tekrar deneyiniz...");
-			break;
-		}  
-    }
+			printf("\nYanlis cevap! Lutfen tekrar deneyiniz...\n\n");
+			scanf("%d", &result);
+			if(result != (num * i)){
+				i--;
+			}
+		}
+	}
+
+	    
 	
 	
 	return 0;
