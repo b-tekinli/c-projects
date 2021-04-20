@@ -721,6 +721,8 @@ int main() {
 	*/
 	
 	
+	
+	
 	/*
 	int uzunlukDondur(char name[]){
 		
@@ -742,6 +744,7 @@ int main() {
 	
 	
 	
+	/*
 	void tersCevir(char dizi[]){
 		int i, uzunluk, gecici;
 		
@@ -764,7 +767,7 @@ int main() {
 	tersCevir(text);
 	
 	printf("%s", text);
-	
+	*/
 	
 	
 	
