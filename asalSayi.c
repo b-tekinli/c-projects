@@ -4,43 +4,34 @@
 #include <locale.h>
 
 
+bool primeNumber(int n){													// asal sayÄ± fonksiyonunu tanÄ±mladÄ±k.
 
-bool primeNumber(int n){
-	
 	printf("\nASAL SAYI MI?\n");
 	
-	int num, i, prime=1;
-	
-	
-	printf("Sayı giriniz: ");
+	int num, i;
+	printf("SayÄ± giriniz: ");
 	scanf("%d", &num);
 	
 	for(i=2; i<num; i++){
 		if(num % i == 0){
-			return false;
-			//prime=0;
-			//break;
+			return 0;
 		}
 	}
-	return true;
-	
+	return 1;
 }
 
+int totalPrimeNumber(int num){											 	// asal sayÄ± toplamÄ±nÄ± veren fonksiyonu tanÄ±mladÄ±k.
 
-
-
-int totalPrimeNumber(int num){											 	// asal sayı fonksiyonu tanımladık.
-
-	printf("\nTOPLAM KAÇ ASAL SAYI VAR?\n");
+	printf("\nTOPLAM KAÃ‡ ASAL SAYI VAR?\n");
 			
 	int i, j, result = 0, counter = 0;
 	
-	printf("Bir sayı giriniz: ");										 	// kullanıcıdan değer istedik.
+	printf("Bir sayÄ± giriniz: ");										 	// kullanÄ±cÄ±dan deÄŸer istedik.
 	scanf("%d", &num);
 	
-	for(j=2; j<=num; j++){ 												 	// asal sayıyı 2'den başlatıp kullanıcının girdiği sayıya kadar 1 artırdık.
+	for(j=2; j<=num; j++){ 												 	// asal sayÄ±yÄ± 2'den baÅŸlatÄ±p kullanÄ±cÄ±nÄ±n girdiÄŸi sayÄ±ya kadar 1 artÄ±rdÄ±k.
 	        for(i=1; i<=j; i++){ 
-	            if(j % i == 0){											 	// girilen sayının asal olup olmadığını kontrol etmek için 0'a tam bölünen sayıları kontrol ettik.
+	            if(j % i == 0){											 	// girilen sayÄ±nÄ±n asal olup olmadÄ±ÄŸÄ±nÄ± kontrol etmek iÃ§in 0'a tam bÃ¶lÃ¼nen sayÄ±larÄ± kontrol ettik.
 	                counter += 1; 
 	            } 
         	} 
@@ -50,9 +41,9 @@ int totalPrimeNumber(int num){											 	// asal sayı fonksiyonu tanımladık.
 	            result += 1; 
 	            counter = 0; 
 	        } 
-	        counter = 0;           										 	// sayacı, döngüden çıktığında kaldığı yerden devam etmesin diye sıfırladık.                               
+	        counter = 0;           										 	// sayacÄ±, dÃ¶ngÃ¼den Ã§Ä±ktÄ±ÄŸÄ±nda kaldÄ±ÄŸÄ± yerden devam etmesin diye sÄ±fÄ±rladÄ±k.                               
     } 
-    printf ("\nToplam %d tane asal sayı vardır.\n\n\n", result);	       	// ekrana toplam asal sayı değerini yazdırdık.
+    printf ("\nToplam %d tane asal sayÄ± vardÄ±r.\n\n\n", result);	       	// ekrana toplam asal sayÄ± deÄŸerini yazdÄ±rdÄ±k.
 }
 
 
@@ -63,37 +54,35 @@ int main(int argc, char *argv[]) {
     
     printf("\n0-100 ARASI ASAL SAYILAR\n");
     
-    int i, j, a=0;
+    int i, j, a=0, n;
     
-    for(i=2; i<100; i++){													// 0'dan 100'e kadar olan asal sayıları yazdırıyoruz.
+    for(i=2; i<100; i++){													// 0'dan 100'e kadar olan asal sayÄ±larÄ± yazdÄ±rÄ±yoruz.
     	for(j=1; j<=i+1; j++){
     		if(i % j == 0){
     			a++;
 			}
 		}
-		if(a==2){
-			printf("\n%d\n", i);
+		if(a == 2){
+			printf("%d\n", i);
 			a=0;		
 		}
 		else{
-			a=0;															// kontrol yapabilsin diye sayacı sıfırladık.
+			a=0;															// kontrol yapabilsin diye sayacÄ± sÄ±fÄ±rladÄ±k.
 		}
 	}
     
     
-    totalPrimeNumber(1);													// toplam kaç asal sayı olduğunu gösteren fonksiyonu çağırdık.
+    totalPrimeNumber(1);													// toplam kaÃ§ asal sayÄ± olduÄŸunu gÃ¶steren fonksiyonu Ã§aÄŸÄ±rdÄ±k.
 
 
-    int n;
-    ,
-
-    if(primeNumber(n )==1){													// asal sayıları true false döndüren fonksiyonu çağırdık.
-		printf("True");														// sayı asal ise true döndürür.
+    
+    if(primeNumber(n ) == 0){												// asal sayÄ±larÄ± true false dÃ¶ndÃ¼ren fonksiyonu Ã§aÄŸÄ±rdÄ±k.
+    	printf("0");														// sayÄ± asal deÄŸilse false dÃ¶ndÃ¼rÃ¼r.														
 	}
-	else{																	// sayı asal değilse false döndürür.
-		printf("False");	
+	else{																	
+		printf("1");														// sayÄ± asal ise true dÃ¶ndÃ¼rÃ¼r.
 	}
 	
-		
+	
     return 0;
 }
