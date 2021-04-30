@@ -37,6 +37,10 @@ int expOperation(int num1, int num2){											// üs alma işlemi fonksiyonu
 }
 
 
+char menu(){																	// menü fonksiyonu tanımladık.
+	printf("\n(+)Toplama\n(-)Cikarma\n(*)Carpma\n(/)Bolme\n(^)Us Alma\n(D)Dur\nLutfen yapmak istediginiz islemi seciniz: ");
+}
+
 
 int main(int argc, char *argv[]) {
 	
@@ -48,7 +52,7 @@ int main(int argc, char *argv[]) {
 	
 	
 	while(1){																	// seçim 0 olmadığı sürece döngünün içine girmesi şartını belirttik.
-		printf("\n(+)Toplama\n(-)Cikarma\n(*)Carpma\n(/)Bolme\n(^)Us Alma\n(D)Dur\nLutfen yapmak istediginiz islemi seciniz: ");
+		menu();
 		scanf("%c", &select);
 												
 		if(select == '+'){
