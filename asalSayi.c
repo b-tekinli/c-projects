@@ -78,10 +78,10 @@ int main(int argc, char *argv[]) {
     
     if(primeNumber(n ) == 0){												// asal sayıları true false döndüren fonksiyonu çağırdık.
     	printf("0");														// sayı asal değilse false döndürür.														
-	}
-	else{																	
-		printf("1");														// sayı asal ise true döndürür.
-	}
+    }
+    else{																	
+	printf("1");														// sayı asal ise true döndürür.
+    }
 	
 	
     return 0;
