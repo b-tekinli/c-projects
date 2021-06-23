@@ -4,7 +4,7 @@
 int main() {
 	
 	
-	// Ekrana yazdýrma fonksiyonu printf kullanýmý 
+	// Ekrana yazdï¿½rma fonksiyonu printf kullanï¿½mï¿½ 
 	
 	/*
 	printf("Merhaba \t Yazilimci");
@@ -26,7 +26,7 @@ int main() {
 	
 	
 	
-	// Veri tipleri, Deðiþkenler ve Format Belirleyiciler
+	// Veri tipleri, Deï¿½iï¿½kenler ve Format Belirleyiciler
 	
 	/*
 	int a1 = 42;
@@ -48,7 +48,7 @@ int main() {
 	
 	
 	
-	// Aritmetik Ýþlemler
+	// Aritmetik ï¿½ï¿½lemler
 	
 	/*
 	int x1 = 1;
@@ -68,7 +68,7 @@ int main() {
 	
 	
 	
-	// Aritmetik Ýfadeler
+	// Aritmetik ï¿½fadeler
 	
 	/*
 	printf("%d\n", 2-3+4);
@@ -86,7 +86,7 @@ int main() {
 	
 	
 	
-	// Atamalar, Artýrma ve Azaltma Ýþlemler
+	// Atamalar, Artï¿½rma ve Azaltma ï¿½ï¿½lemler
 	
 	/*
 	int x = 5;
@@ -121,7 +121,7 @@ int main() {
 	
 	
 	
-	// Tür Dönüþümleri
+	// Tï¿½r Dï¿½nï¿½ï¿½ï¿½mleri
 	
 	/*
 	int x = 3;
@@ -137,7 +137,7 @@ int main() {
 	
 	
 	
-	// Standart Giriþ-Çýkýþ Fonksiyonlarý 			==> Kullanýcýdan input alma fonksiyonu => scanf
+	// Standart Giriï¿½-ï¿½ï¿½kï¿½ï¿½ Fonksiyonlarï¿½ 			==> Kullanï¿½cï¿½dan input alma fonksiyonu => scanf
 	
 	/*
 	#define PI 3.14
@@ -155,10 +155,10 @@ int main() {
 	
 	
 	
-	// Örnek Programlar
+	// ï¿½rnek Programlar
 	
 	
-	// Girilen 5 sayýnýn ortalamasýný hesaplayan program
+	// Girilen 5 sayï¿½nï¿½n ortalamasï¿½nï¿½ hesaplayan program
 	/*
 	int a, b, c, d, e;
 	
@@ -171,7 +171,7 @@ int main() {
 	*/
 	
 	
-	// ax^2 + bx +c þeklindeki denklemin köklerini bulan proogram
+	// ax^2 + bx +c seklindeki denklemin koklerini bulan proogram
 	
 	/*
 	int a, b, c;
@@ -198,7 +198,7 @@ int main() {
 	
 	
 	
-	// Koþullu Ýfadeler
+	// Koï¿½ullu ï¿½fadeler
 	
 	/*
 	int note;
@@ -216,7 +216,7 @@ int main() {
 	
 	
 	
-	// Mantýksal Operatörler
+	// Mantï¿½ksal Operatï¿½rler
 	
 	/*
 	int a = 40;
@@ -231,7 +231,7 @@ int main() {
 	*/
 	
 	
-	// Alýþtýrmalar
+	// Alï¿½ï¿½tï¿½rmalar
 	
 	/*
 	int a = 40;
@@ -398,7 +398,7 @@ int main() {
 	
 	
 	
-	// Döngüler
+	// Donguler
 	//While Dongusu
 	
 	/*
@@ -451,7 +451,7 @@ int main() {
 	
 	
 	
-	/* 1234 rakamlarý toplamý kaç haneli olduðunu bulma */
+	/* 1234 rakamlarï¿½ toplamï¿½ kaï¿½ haneli olduï¿½unu bulma */
 	
 	/*
 	int n, hane = 0, toplam = 0;
@@ -561,34 +561,162 @@ int main() {
 	
 	// Diziler
 	
+	/* int sayilar[] = {1, 2, 3, 4, 5};
+	// printf("%d", sayilar[2]);
+
+	int i = 0;
+	for (; i < 5; i++)
+	{
+		printf("%d\n", sayilar[i]);
+	}
+	*/
+	
+	/*
+	float toplam = 0.0;
+	float sayilar[5];
+
+	int i;
+
+	for (i = 0; i < 5; i++)
+	{
+		printf("Bir sayi giriniz: ");
+		scanf("%f", &sayilar[i]);
+	}
 	
 	
+	for (i = 0; i < 5; i++)
+	{
+		toplam += sayilar[i];
+	}
+	printf("Girdiginiz sayilarin aritmetik ortalamasi %.2f'dir.", toplam / 5);
+	*/
 	
 	
+
+
+	// KARAKTER DIZILERI
+
+	/*
+	char isim[] = "Murat";
+
+	printf("%c", isim[1]);
+	*/
+
+
+	/*
+	char isim[20];
+
+	printf("isminizi girin: ");
+	scanf("%s",  isim);
+	
+	printf("isminiz: %s", isim);
+	*/
 	
 	
+
+
+	// COK BOYUTLU DIZILER
+
+	/*
+		1 2 3
+		4 5 6
+		7 8 9
+	*/
+
+	// int matris[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+	// printf("%d\n", matris[2][2]);
+	
+	/*
+	int i, j;
+	for (i = 0; i < 3; i++)
+	{
+		for (j = 0; j < 3; j++)
+		{
+			scanf("%d", &matris[i][j]);
+		}
+	}
+	*/
+
+	/*
+	for (i = 0; i < 3; i++)
+	{
+		for (j = 0; j < 3; i++)
+		{
+			printf("%d ", matris[i][j]);
+		}
+		printf("\n");
+	}
+	*/
+
+
+
+	// ORNEK PROGRAM
+
+	/*
+	3 5 1 3 2 4 4 4 5 5 9 8 9 7 7
+	3*5lik* matris (3 satÄ±rÄ± 5 sÃ¼tunu)
+
+	Matris:
+	3 5 1 3 2
+	4 4 4 5 5
+	9 8 9 7 7
+
+	Sonuc:
+	16 17 14 15 14
+	*/
+
+
+	/*
+	int matris[3][5];
+	int i, j, sum = 0;
+
+	for (i = 0; i < 3; i++)
+	{
+		for (j = 0; j < 5; j++)
+		{
+			scanf("%d", &matris[i][j]);
+		}
+	}
+
+	for (i = 0; i < 3; i++)
+	{
+		for (j = 0; j < 5; j++)
+		{
+			printf("%d ", matris[i][j]);
+		}
+		printf("\n");
+	}
+	
+
+	for (j = 0; j < 5; j++)
+	{
+		for (i = 0; i < 3; i++)
+		{
+			sum += matris[i][j];
+		}
+		printf("%d ", sum);
+
+		sum = 0;
+	}
+	*/
+
+
+	/*
+	1 2 3 4 5
+	6 7 8 9 10
+	11 12 13 14 15
+	*/
+
+
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
 	
 	// Fonksiyonlar
 
 	/*
-	void hatayiBas(int hata, int hata2){									// void, hiçbir þey döndürmeyen fonksiyondur.
+	void hatayiBas(int hata, int hata2){									// void, hicbir sey dondurmeyen fonksiyondur.
 		printf("Hata kodu %d", hata)
 	}
 	
@@ -621,7 +749,7 @@ int main() {
 	
 	
 	
-	// Faktöriyel Bulma
+	// Faktoriyel Bulma
 	
 	/*
 	int faktoriyel(int sayi){
@@ -646,7 +774,7 @@ int main() {
 	
 	
 	
-	// Asal sayi mi deðil mi?
+	// Asal sayi mi degil mi?
 	
 	/*
 	int asalMi(int sayi){
@@ -777,15 +905,15 @@ int main() {
 	
 	
 	
-	/* POINTERLAR (GÖSTERGELER) */
+	/* POINTERLAR (GOSTERGELER) */
 	
 	
-	// Pointer: Bellekte saklanan deðerin adresini gösterir.
+	// Pointer: Bellekte saklanan deï¿½erin adresini gï¿½sterir.
 	
 	/*
 	int i = 5;
 	
-	int *p = &i;		// &: deðiþkenin adres bilgisini veriyor, *: adresteki deðeri veriyor.
+	int *p = &i;		// &: deï¿½iï¿½kenin adres bilgisini veriyor, *: adresteki deï¿½eri veriyor.
 	
 	printf("%u\n", p);
 	
