@@ -11,7 +11,7 @@ int main() {
 
   char sayilar[5][5] = {"bir", "iki", "uc", "dort", "bes"}; // {b}, {i}, {r}, {/0} gibi de tanımlanabilir
 
-  printf("Dizinin 4. elemanı: %s", sayilar[3]);
+  printf("Dizinin 4. elemanı: %s\n", sayilar[3]);
   printf("Dizinin 4. elemanının 3. karakteri: %c", sayilar[3][2]);
   
   
