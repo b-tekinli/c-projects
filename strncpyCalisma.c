@@ -12,7 +12,7 @@ int main() {
   char soyad[25] = ""; // burada c'nin bir bug'ı olduğu için
   // boş karakter ataması yapmak zorundayız yoksa ekranda
   // saçma sapan karakterler görürüz
-  // bu durum genelde n parametreleri fonksiyonlarda görülür
+  // bu durum genelde n parametresi olan fonksiyonlarda görülür
 
   // ad dizisindeki karakterleri soyad dizisine n kadar kopyalıyoruz
   strncpy(soyad, ad, 5); // kopyalanacak içerik 2. parametre olmalı
