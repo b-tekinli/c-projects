@@ -1,6 +1,6 @@
 #include <stdio.h>
  
-main()
+int main()
 {
     int sayi1,sayi2;
     int islem;
@@ -35,4 +35,6 @@ main()
         default:
             printf("Lutfen gecerli bir sayi giriniz..");
     }
+    
+    return (0);
 }
